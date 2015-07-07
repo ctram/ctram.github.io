@@ -1,0 +1,12 @@
+.score {
+  z-index: 1001;
+  background-color: rgba(255,0,0,0.5);
+  position: relative;
+  right: 25%;
+  top: 0%;
+  width: 33%;
+}
+
+canvas {
+  background-color: #3c9c00;
+}
