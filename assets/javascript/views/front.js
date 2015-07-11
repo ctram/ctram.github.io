@@ -3,14 +3,14 @@ App.Views.Front = Backbone.CompositeView.extend({
 
   },
 
-  template: JST['front'],
+  template: new EJS({url: 'assets/templates/front.ejs'}),
 
   events: {
 
   },
 
   render: function () {
-    var content = this.template();
+    var content = this.template.render();
     this.$el.html(content);
     this.attachSubviews();
     return this;
