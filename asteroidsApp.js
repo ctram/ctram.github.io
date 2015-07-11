@@ -1,3 +1,0 @@
-window.Asteroids = {
-  MovingObject: {}
-};
