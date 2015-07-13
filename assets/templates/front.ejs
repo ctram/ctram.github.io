@@ -116,5 +116,10 @@
           $hoverTitle.removeClass('move-left');
         }
       );
+
+      # FIXME: site-wrapper is moveable for some reason -
+      setTimeout(function () {
+        $('*').removeClass('animated');
+      }, 2000)
     })();
 </script>

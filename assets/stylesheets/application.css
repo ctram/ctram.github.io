@@ -134,9 +134,11 @@ section.splash {
   margin-top: 28px;
 }
 
-.site-wrapper {
+body .site-wrapper {
   box-shadow: inset 0 0 186px rgba(0,0,0,1);
   position: absolute;
+  display: block;
+  overflow: auto;
 }
 
 .site-wrapper-inner {
