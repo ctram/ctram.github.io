@@ -8,13 +8,13 @@
   <link href="assets/stylesheets/application.css" rel="stylesheet">
   <link href="vendor/stylesheets/animate.css" rel="stylesheet">
 
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans|Ubuntu+Condensed|Inconsolata|Play' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=PT+Sans|Ubuntu+Condensed|Inconsolata|Play' rel='stylesheet' type='text/css'>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="vendor/javascript/underscore.js"></script>
   <script src="vendor/javascript/backbone.js"></script>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="vendor/javascript/ejs_production.js"></script>
   <script src="assets/javascript/app.js"></script>
   <script src="assets/javascript/routers/router.js"></script>
@@ -24,14 +24,126 @@
 </head>
 
 <body>
-  <div id='navbar'></div>
-  <div id='content'>
+  <div class='background-img animated '>
+  </div>
+
+  <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <nav>
+                <!--
+                <ul class="nav masthead-nav">
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+                -->
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <section class='splash'>
+              <div class='headshot animated slideInDown'>
+                <img src='assets/images/headshot-colors.jpg'>
+              </div>
+
+              <h1 class="cover-heading animated slideInLeft">
+                Chris Tram
+              </h1>
+              <p class="lead animated slideInRight">
+                I am a web developer living in the wonderful San Francisco Bay Area. I am in love with solving problem and building things.
+              </p>
+
+            </section>
+
+            <hr>
+
+            <section class='projects animated slideInLeft'>
+              <h3>
+                Projects
+              </h3>
+
+              <div class='project animated slideInLeft'>
+                <div class='project-img' data-project-name='fosterpals'>
+                  <div class='hover-title fosterpals'>
+                    FosterPals
+                  </div>
+                  <a href='http://www.fosterpals.com'>
+                    <img src='assets/images/fosterpals-shot.png'>
+                  </a>
+                </div>
+                </h4>
+                <p>
+                  I live with two amazing dogs, both rescued from animal shelters. There is a myth that shelter dogs are somehow not on par with dogs from breeders, which is just not true. FosterPals was created with this in mind and seeks to connect animal rescue groups with gracious people who wish to foster animals until they find their forever homes!
+                </p>
+              </div>
+
+              <div class='project animated slideInLeft'>
+                <div class='project-img' data-project-name='space'>
+                  <div class='hover-title space'>
+                    Space Debris!
+                  </div>
+                  <a href='http://ctram.github.io/space_debris'>
+                    <img src='assets/images/space-debris-shot.png'>
+                  </a>
+                </div>
+                <p>
+                  Space Debris! is my take on the classic game from the golden age of gaming, Asteroids. Piloting your trusty spaceship, you are responsible for ridding the space ways of hazardous debris! Be careful not to accidentally collide with the debris you are trying to dispose of!
+                </p>
+              </div>
+            </section>
+
+            <hr>
+
+            <section class='links animated slideInRight' id='contact'>
+              <h3>Contact Me</h3>
+              <div class='contact-links'>
+                <a href='http://www.github.com/ctram' title='Github'>
+                  <img src='assets/images/github-octocat-transparent.png' class='github'>
+                </a>
+
+                <a href='https://www.linkedin.com/pub/chris-tram/29/110/7b9' title='LinkedIn'>
+                  <img src='assets/images/linkedin-transparent.png' class='linkedin'>
+                </a>
+
+
+                <a href="mailto:chris.tram@gmail.com" title='Email: chris.tram@gmail.com'>
+                  <img src='assets/images/@@@.png' class='at-sign'>
+                </a>
+
+                <a href='https://docs.google.com/document/d/1VqlX70iCs_hVZKyvB9bwlothixH6fugFIkGRddBY3Z8/edit?usp=sharing' title='Resume on Google Docs'>
+                  <img src='assets/images/google_docs.png' class='gdocs'>
+                </a>
+
+
+              </div>
+
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
 <script>
-  $(document).ready(function () {
-    App.initialize();
-  });
+    (function () {
+      $('.project-img').hover(
+        function (evt) {
+          var hoverTitle = evt.target
+          if (hoverTitle.tagName !== 'IMG') {
+            $(hoverTitle).addClass('fadeOut').addClass('hidden');
+          }
+        },
+        function (evt) {
+          var $currTarget = $(evt.currentTarget);
+          var projectName = $currTarget.data('project-name');
+          var $hoverTitle = $('.' + projectName);
+          $hoverTitle.removeClass('fadeOut').removeClass('hidden');
+        }
+      );
+    })();
 </script>
+
 </html>

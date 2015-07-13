@@ -23,8 +23,8 @@ body {
   margin-bottom: 100px;
 }
 
-.splash {
-  font-family: 'Inconsolata';
+.hidden {
+  display: none;
 }
 
 img.at-sign {
@@ -48,7 +48,6 @@ img.linkedin {
   width: 100%;
   height: 100%;
 }
-
 
 .cover-container {
   width: 100%;
@@ -86,17 +85,17 @@ img.linkedin {
   font-family: 'Play', sans-serif;
 }
 
-.move-left {
-  transform: translateX(-100%);
-  opacity: 0.0;
-}
-
 img {
   max-width: 200px;
 }
 
 .masthead.clearfix {
   width: 100%;
+}
+
+.move-left {
+  transform: translateX(-100%);
+  opacity: 0.0;
 }
 
 p.lead {
@@ -143,4 +142,8 @@ section.splash {
 .site-wrapper-inner {
   display: block;
   padding-top: 6%;
+}
+
+.splash {
+  font-family: 'Inconsolata';
 }
