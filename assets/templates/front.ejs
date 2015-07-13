@@ -29,11 +29,6 @@
               I am web developer living in the San Francisco Bay Area. I am in love with solving problem and building things.
             </p>
 
-  <!--
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p>
-  -->
           </section>
 
           <hr>
@@ -44,8 +39,8 @@
             </h3>
 
             <div class='project animated slideInLeft'>
-              <div class='project-img'>
-                <div class='hover-title'>
+              <div class='project-img' data-project-name='fosterpals'>
+                <div class='hover-title fosterpals'>
                   FosterPals
                 </div>
                 <a href='http://www.fosterpals.com'>
@@ -59,13 +54,11 @@
             </div>
 
             <div class='project animated slideInRight'>
-              <div class='project-img'>
+              <div class='project-img' data-project-name='space'>
                 <div class='hover-title space'>
                   Space Debris!
                 </div>
                 <a href='http://ctram.github.io/space_debris'>
-                  <div class='hover-title'>
-                  </div>
                   <img src='assets/images/space-debris-shot.png'>
                 </a>
               </div>
@@ -106,3 +99,27 @@
 
     </div>
 </div>
+
+<script>
+    (function () {
+      $('.project-img').hover(
+        function (evt) {
+
+          var $hoverTitle = $(evt.target);
+          $hoverTitle.toggleClass('move-left');
+        },
+        function (evt) {
+
+
+          var $currTarget = $(evt.currentTarget);
+          var projectName = $currTarget.data('project-name');
+          var $hoverTitle = $('.' + projectName);
+          $hoverTitle.toggleClass('move-left');
+        }
+      );
+
+    })();
+
+
+
+</script>
