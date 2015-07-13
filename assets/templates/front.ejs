@@ -104,17 +104,16 @@
     (function () {
       $('.project-img').hover(
         function (evt) {
-
-          var $hoverTitle = $(evt.target);
-          $hoverTitle.toggleClass('move-left');
+          var hoverTitle = evt.target
+          if (hoverTitle.tagName !== 'IMG') {
+            $(hoverTitle).addClass('move-left');
+          }
         },
         function (evt) {
-
-
           var $currTarget = $(evt.currentTarget);
           var projectName = $currTarget.data('project-name');
           var $hoverTitle = $('.' + projectName);
-          $hoverTitle.toggleClass('move-left');
+          $hoverTitle.removeClass('move-left');
         }
       );
 
