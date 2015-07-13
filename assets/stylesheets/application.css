@@ -16,6 +16,7 @@ font-family: 'PT Sans', sans-serif;
 body {
   text-shadow: 0px 0px 1px black;
   font-family: 'Inconsolata';
+  background-color: white;
 }
 
 .contact-links {
