@@ -9,6 +9,8 @@ App.Views.Front = Backbone.CompositeView.extend({
 
   },
 
+  className: 'front-view',
+
   render: function () {
     var content = this.template.render();
     this.$el.html(content);
