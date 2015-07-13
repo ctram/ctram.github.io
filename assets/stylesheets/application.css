@@ -1,3 +1,10 @@
+/*
+font-family: 'Play', sans-serif;
+font-family: 'Inconsolata';
+font-family: 'Ubuntu Condensed', sans-serif;
+font-family: 'PT Sans', sans-serif;
+*/
+
 .background-img {
   width: 100%;
   height: 100%;
@@ -8,12 +15,33 @@
 
 body {
   text-shadow: 0px 0px 1px black;
+  font-family: 'Inconsolata';
+}
+
+.contact-links {
+  margin-bottom: 100px;
+}
+
+.splash {
+  font-family: 'Inconsolata';
+}
+
+
+img.at-sign {
+  max-width: 82px;
+}
+img.github {
+  max-width: 105;
+}
+img.linkedin {
+  max-width: 140px;
 }
 
 #content {
   width: 100%;
   height: 100%;
 }
+
 
 .cover-container {
   width: 100%;
@@ -43,25 +71,18 @@ body {
   transition: all 0.5s ease-out;
 }
 
-/*.hover-title:hover {
-  left: -50%;
-}*/
+.hover-title.fosterpals {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.hover-title.space {
+  font-family: 'Play', sans-serif;
+}
 
 .move-left {
   transform: translateX(-100%);
   opacity: 0.0;
 }
-
-/*
-.hover-title.space {
-  position: absolute;
-  border-radius: 10px;
-  height: 100%;
-  width: 100%;
-  font-size: 20pt;
-  padding-top: 15%;
-  background-color: rgba(0,0,0,1.0);
-}*/
 
 img {
   max-width: 200px;
@@ -78,12 +99,14 @@ p.lead {
 }
 
 .projects .project {
-  width: 68%%;
+  width: 100%%;
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 .project img {
