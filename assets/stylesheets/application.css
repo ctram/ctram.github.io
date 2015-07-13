@@ -27,13 +27,19 @@ body {
   font-family: 'Inconsolata';
 }
 
-
 img.at-sign {
   max-width: 82px;
 }
+
+img.gdocs {
+  max-width: 87px;
+  margin-left: 13px;
+}
+
 img.github {
   max-width: 105;
 }
+
 img.linkedin {
   max-width: 140px;
 }
