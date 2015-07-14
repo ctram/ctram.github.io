@@ -100,20 +100,20 @@
               <h3>Contact Me</h3>
               <div class='contact-links'>
                 <a href='http://www.github.com/ctram' title='Github'>
-                  <img src='assets/images/github-octocat-transparent.png' class='github'>
+                  <img src='assets/images/github-octocat-transparent.png' class='github animated'>
                 </a>
 
                 <a href='https://www.linkedin.com/pub/chris-tram/29/110/7b9' title='LinkedIn'>
-                  <img src='assets/images/linkedin-transparent.png' class='linkedin'>
+                  <img src='assets/images/linkedin-transparent.png' class='linkedin animated'>
                 </a>
 
 
                 <a href="mailto:chris.tram@gmail.com" title='Email: chris.tram@gmail.com'>
-                  <img src='assets/images/@@@.png' class='at-sign'>
+                  <img src='assets/images/@@@.png' class='at-sign animated'>
                 </a>
 
                 <a href='https://docs.google.com/document/d/1pcVg0UtKC_hWz9apCpHHYymc2_SLyFZqbVU1TVuurcE/edit?usp=sharing' title='Resume on Google Docs'>
-                  <img src='assets/images/google_docs.png' class='gdocs'>
+                  <img src='assets/images/google_docs.png' class='gdocs animated'>
                 </a>
               </div>
             </section>
@@ -148,6 +148,13 @@
           $hoverTitle.removeClass('fadeOut').removeClass('hidden').addClass('fadeIn');
         }
       );
+      $('.contact-links img').mouseenter(function (evt) {
+        var $img = $(evt.target);
+        $img.addClass('pulse');
+        setTimeout(function () {
+          $img.removeClass('pulse');
+        }, 1000);
+      });
     })();
 </script>
 
