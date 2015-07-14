@@ -8,7 +8,7 @@ font-family: 'PT Sans', sans-serif;
 .background-img {
   width: 100%;
   height: 100%;
-  background-image: url('../images/rappeling-hand-out-modal-style.jpg');
+  background-image: url('../images/rappeling-hand-out-modal-style-cropped.jpg');
   background-size: cover;
   position: fixed;
 }
@@ -83,6 +83,12 @@ img.linkedin {
 
 .hover-title.space {
   font-family: 'Play', sans-serif;
+}
+
+iframe.resume {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 img {

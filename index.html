@@ -66,7 +66,7 @@
 
               <div class='project animated slideInLeft'>
                 <div class='project-img' data-project-name='fosterpals'>
-                  <div class='hover-title fosterpals'>
+                  <div class='hover-title fosterpals animated'>
                     FosterPals
                   </div>
                   <a href='http://www.fosterpals.com'>
@@ -81,7 +81,7 @@
 
               <div class='project animated slideInLeft'>
                 <div class='project-img' data-project-name='space'>
-                  <div class='hover-title space'>
+                  <div class='hover-title space animated'>
                     Space Debris!
                   </div>
                   <a href='http://ctram.github.io/space_debris'>
@@ -112,14 +112,16 @@
                   <img src='assets/images/@@@.png' class='at-sign'>
                 </a>
 
-                <a href='https://docs.google.com/document/d/1VqlX70iCs_hVZKyvB9bwlothixH6fugFIkGRddBY3Z8/edit?usp=sharing' title='Resume on Google Docs'>
+                <a href='https://docs.google.com/document/d/1pcVg0UtKC_hWz9apCpHHYymc2_SLyFZqbVU1TVuurcE/edit?usp=sharing' title='Resume on Google Docs'>
                   <img src='assets/images/google_docs.png' class='gdocs'>
                 </a>
-
-
               </div>
-
             </section>
+            <!--
+            <section class='resume'>
+              <iframe class='resume' src="https://docs.google.com/document/d/1pcVg0UtKC_hWz9apCpHHYymc2_SLyFZqbVU1TVuurcE/pub?embedded=true"></iframe>
+            </section>
+            -->
           </div>
         </div>
       </div>
@@ -133,14 +135,17 @@
         function (evt) {
           var hoverTitle = evt.target
           if (hoverTitle.tagName !== 'IMG') {
-            $(hoverTitle).addClass('fadeOut').addClass('hidden');
+            $(hoverTitle).removeClass('fadeIn').addClass('fadeOut');
+            setTimeout(function () {
+              $(hoverTitle).addClass('hidden');
+            }, 500);
           }
         },
         function (evt) {
           var $currTarget = $(evt.currentTarget);
           var projectName = $currTarget.data('project-name');
           var $hoverTitle = $('.' + projectName);
-          $hoverTitle.removeClass('fadeOut').removeClass('hidden');
+          $hoverTitle.removeClass('fadeOut').removeClass('hidden').addClass('fadeIn');
         }
       );
     })();
