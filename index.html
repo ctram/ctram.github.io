@@ -135,9 +135,6 @@
           var hoverTitle = evt.target
           if (hoverTitle.tagName !== 'IMG') {
             $(hoverTitle).removeClass('fadeIn').addClass('fadeOut');
-            setTimeout(function () {
-              $(hoverTitle).addClass('hidden');
-            }, 500);
           }
         },
         function (evt) {
