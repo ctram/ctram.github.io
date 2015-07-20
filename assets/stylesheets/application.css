@@ -77,7 +77,7 @@ img.linkedin {
   transition: all 0.5s ease-out;
 }
 
-.hover-title.fosterpals {
+.hover-title.fosterpals, .hover-title.chess {
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
@@ -94,6 +94,8 @@ iframe.resume {
 img {
   max-width: 200px;
 }
+
+
 
 .masthead.clearfix {
   width: 100%;
@@ -128,6 +130,11 @@ p.lead {
 .project-img {
   float: left;
   position: relative;
+}
+
+img.chess {
+  max-height: 105px;
+  min-width: 200px;
 }
 
 .project p {
