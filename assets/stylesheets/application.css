@@ -19,29 +19,15 @@ body {
   background-color: white;
 }
 
+body .site-wrapper {
+  box-shadow: inset 0 0 186px rgba(0,0,0,1);
+  position: absolute;
+  display: block;
+  overflow: auto;
+}
+
 .contact-links {
   margin-bottom: 100px;
-}
-
-.hidden {
-  display: none;
-}
-
-img.at-sign {
-  max-width: 82px;
-}
-
-img.gdocs {
-  max-width: 87px;
-  margin-left: 13px;
-}
-
-img.github {
-  max-width: 105;
-}
-
-img.linkedin {
-  max-width: 140px;
 }
 
 #content {
@@ -53,14 +39,18 @@ img.linkedin {
   width: 100%;
 }
 
-/*.dark-cover {
-  background-color: black;
-}*/
 
 .front-view {
   width: 100%;
   height: 100%;
 }
+
+.hidden {
+  display: none;
+}
+/*.dark-cover {
+  background-color: black;
+}*/
 
 .headshot img {
   border-radius: 10px;
@@ -68,13 +58,18 @@ img.linkedin {
 
 .hover-title {
   position: absolute;
+  display: inline-block;
   border-radius: 10px;
   height: 100%;
-  width: 100%;
+  width: 600px;
   font-size: 20pt;
-  padding-top: 15%;
+  padding-top: 128px;
   background-color: rgba(0,0,0,0.70);
   transition: all 0.5s ease-out;
+}
+
+.hover-title.chess {
+  padding-top: 180px;
 }
 
 .hover-title.fosterpals, .hover-title.chess {
@@ -92,9 +87,31 @@ iframe.resume {
 }
 
 img {
-  max-width: 200px;
+  max-width: 600px;
 }
 
+
+img.at-sign {
+  max-width: 82px;
+}
+
+/*img.chess {
+  max-height: 105px;
+  min-width: 200px;
+}*/
+
+img.gdocs {
+  max-width: 87px;
+  margin-left: 13px;
+}
+
+img.github {
+  max-width: 105;
+}
+
+img.linkedin {
+  max-width: 140px;
+}
 
 
 .masthead.clearfix {
@@ -112,15 +129,23 @@ p.lead {
   margin-right: auto;
 }
 
+p.project {
+  width: 43%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
 .projects .project {
-  width: 100%%;
+  /*width: 100%;*/
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
   margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 30%;
-  padding-right: 30%;
+  /*margin-bottom: 20px;*/
+  /*padding-left: 30%;*/
+  /*padding-right: 30%;*/
 }
 
 .project img {
@@ -128,30 +153,18 @@ p.lead {
 }
 
 .project-img {
-  float: left;
+  /*float: left;*/
   position: relative;
 }
 
-img.chess {
-  max-height: 105px;
-  min-width: 200px;
-}
-
-.project p {
+/*.project p {
   text-align: left;
   float: right;
   width: 41%;
-}
+}*/
 
 section.splash {
   margin-top: 28px;
-}
-
-body .site-wrapper {
-  box-shadow: inset 0 0 186px rgba(0,0,0,1);
-  position: absolute;
-  display: block;
-  overflow: auto;
 }
 
 .site-wrapper-inner {
@@ -162,7 +175,3 @@ body .site-wrapper {
 .splash {
   font-family: 'Inconsolata';
 }
-
-
-
-git filter-branch -f --env-filter "GIT_AUTHOR_NAME='ctram'; GIT_AUTHOR_EMAIL='chris.tram@gmail.com'; GIT_COMMITTER_NAME='ctram'; GIT_COMMITTER_EMAIL='chris.tram@gmail.com';" HEAD
