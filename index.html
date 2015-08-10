@@ -59,9 +59,9 @@
             <hr>
 
             <section class='projects animated slideInLeft'>
-              <h3>
+              <h2>
                 Projects
-              </h3>
+              </h2>
 
               <div class='project animated slideInLeft'>
                 <div class='project-img' data-project-name='fosterpals'>
@@ -72,7 +72,6 @@
                     <img src='assets/images/fosterpals-shot.png'>
                   </a>
                 </div>
-                </h4>
               </div>
               <p class='project'>
                 I live with two amazing dogs, both rescued from animal shelters. There is a myth that shelter dogs are somehow not on par with dogs from breeders, which is just not true. FosterPals was created with this in mind and seeks to connect animal rescue groups with gracious people who wish to foster animals until they find their forever homes!
@@ -144,6 +143,16 @@
 
 <script>
     (function () {
+      $('.project').on('mouseenter', '.hover-title', function (evt) {
+        $(evt.currentTarget).removeClass('fadeIn').addClass('fadeOut');
+      });
+
+      $('.project').on('mouseleave', '.hover-title', function (evt) {
+        $(evt.currentTarget).removeClass('fadeOut').addClass('fadeIn');
+      })
+
+
+      <!--
       $('.project-img').hover(
         function (evt) {
           var hoverTitle = evt.target
@@ -158,6 +167,8 @@
           $hoverTitle.removeClass('fadeOut').removeClass('hidden').addClass('fadeIn');
         }
       );
+      -->
+
       $('.contact-links img').mouseenter(function (evt) {
         var $img = $(evt.target);
         $img.addClass('pulse');
