@@ -151,7 +151,7 @@
   (function () {
     var checkReady = setInterval(function () {
       if (document.readyState === 'complete') {
-        $('#loading-curtains').removeClass('loading').addClass('fadeOut');
+        $('#loading-curtains').removeClass('loading').addClass('slideOutRight');
         setTimeout(function () {
           $('#loading-curtains').remove();
         }, 5000);
