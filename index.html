@@ -25,6 +25,16 @@
 </head>
 
 <body>
+  <div id='loading-curtains' class='animated'>
+    <div id='loading-box'>
+      <div id='loading-text'>
+        Loading...
+      </div>
+      <div id='loading-meter' class='loading animated'>
+      </div>
+    </div>
+  </div>
+
   <div class='background-img animated '>
   </div>
 
@@ -138,41 +148,36 @@
 </body>
 
 <script>
-    (function () {
-      $('.project').on('mouseenter', '.hover-title', function (evt) {
-        $(evt.currentTarget).removeClass('fadeIn').addClass('fadeOut');
-      });
-
-      $('.project').on('mouseleave', '.hover-title', function (evt) {
-        $(evt.currentTarget).removeClass('fadeOut').addClass('fadeIn');
-      })
-
-
-      <!--
-      $('.project-img').hover(
-        function (evt) {
-          var hoverTitle = evt.target
-          if (hoverTitle.tagName !== 'IMG') {
-            $(hoverTitle).removeClass('fadeIn').addClass('fadeOut');
-          }
-        },
-        function (evt) {
-          var $currTarget = $(evt.currentTarget);
-          var projectName = $currTarget.data('project-name');
-          var $hoverTitle = $('.' + projectName);
-          $hoverTitle.removeClass('fadeOut').removeClass('hidden').addClass('fadeIn');
-        }
-      );
-      -->
-
-      $('.contact-links img').mouseenter(function (evt) {
-        var $img = $(evt.target);
-        $img.addClass('pulse');
+  (function () {
+    var checkReady = setInterval(function () {
+      if (document.readyState === 'complete') {
+        $('#loading-curtains').removeClass('loading').addClass('fadeOut');
         setTimeout(function () {
-          $img.removeClass('pulse');
-        }, 1000);
-      });
-    })();
+          $('#loading-curtains').remove();
+        }, 5000);
+      }
+    }, 1);
+
+    while (document.getElementById('loading-curtains') !== null) {
+      checkReady();
+    }
+
+    $('.project').on('mouseenter', '.hover-title', function (evt) {
+      $(evt.currentTarget).removeClass('fadeIn').addClass('fadeOut');
+    });
+
+    $('.project').on('mouseleave', '.hover-title', function (evt) {
+      $(evt.currentTarget).removeClass('fadeOut').addClass('fadeIn');
+    })
+
+    $('.contact-links img').mouseenter(function (evt) {
+      var $img = $(evt.target);
+      $img.addClass('pulse');
+      setTimeout(function () {
+        $img.removeClass('pulse');
+      }, 1000);
+    });
+  })();
 </script>
 
 </html>
