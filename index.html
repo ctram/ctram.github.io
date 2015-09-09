@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <div class='background-img animated '>
+  <div class='background-img'>
   </div>
 
   <div class="site-wrapper">
@@ -69,12 +69,12 @@
 
             <hr>
 
-            <section class='projects animated slideInLeft'>
+            <section class='projects slideInLeft'>
               <h2>
                 Projects
               </h2>
 
-              <div class='project animated slideInLeft'>
+              <div class='project slideInLeft'>
                 <div class='project-img' data-project-name='fosterpals'>
                   <a href='http://www.fosterpals.com'>
                     <div class='hover-title fosterpals animated'>
@@ -86,9 +86,12 @@
               </div>
               <p class='project'>
                 I live with two amazing dogs, both rescued from animal shelters. There is a myth that shelter dogs are somehow not on par with dogs from breeders, which is just not true. FosterPals was created with this in mind and seeks to connect animal rescue groups with gracious people who wish to foster animals until they find their forever homes!
+                <br>
+                <br>
+                Built with: Rails, Backbone.js, jQuery, Bootstrap, PostgreSQL
               </p>
 
-              <div class='project animated slideInLeft'>
+              <div class='project slideInLeft'>
                 <div class='project-img' data-project-name='space'>
                   <a href='http://ctram.github.io/space_debris'>
                     <div class='hover-title space animated'>
@@ -100,9 +103,12 @@
               </div>
               <p class='project'>
                 Space Debris! is my take on the classic game from the golden age of gaming, Asteroids. Piloting your trusty spaceship, you are responsible for ridding the space ways of hazardous debris! Be careful not to accidentally collide with the debris you are trying to dispose of!
+                <br>
+                <br>
+                Built with: JavaScript, HTML Canvas
               </p>
 
-              <div class='project animated slideInLeft'>
+              <div class='project slideInLeft'>
                 <div class='project-img' data-project-name='chess'>
                   <a href='http://www.github.com/ctram/chess'>
                     <div class='hover-title chess animated'>
@@ -114,12 +120,15 @@
               </div>
               <p class='project'>
                 Chess... the timeless game of strategy. Written in Ruby and played from the command line. Currently implemented for two human players.
+                <br>
+                <br>
+                Built with: Ruby
               </p>
             </section>
 
             <hr>
 
-            <section class='links animated slideInRight' id='contact'>
+            <section class='links slideInRight' id='contact'>
               <h3>Contact Me</h3>
               <div class='contact-links'>
                 <a href='http://www.github.com/ctram' title='Github'>
@@ -155,28 +164,28 @@
         setTimeout(function () {
           $('#loading-curtains').remove();
         }, 5000);
+
+        $('.project').on('mouseenter', '.hover-title', function (evt) {
+          $(evt.currentTarget).removeClass('fadeIn').addClass('fadeOut');
+        });
+
+        $('.project').on('mouseleave', '.hover-title', function (evt) {
+          $(evt.currentTarget).removeClass('fadeOut').addClass('fadeIn');
+        })
+
+        $('.contact-links img').mouseenter(function (evt) {
+          var $img = $(evt.target);
+          $img.addClass('pulse');
+          setTimeout(function () {
+            $img.removeClass('pulse');
+          }, 1000);
+        });
       }
     }, 1);
 
     while (document.getElementById('loading-curtains') !== null) {
       checkReady();
     }
-
-    $('.project').on('mouseenter', '.hover-title', function (evt) {
-      $(evt.currentTarget).removeClass('fadeIn').addClass('fadeOut');
-    });
-
-    $('.project').on('mouseleave', '.hover-title', function (evt) {
-      $(evt.currentTarget).removeClass('fadeOut').addClass('fadeIn');
-    })
-
-    $('.contact-links img').mouseenter(function (evt) {
-      var $img = $(evt.target);
-      $img.addClass('pulse');
-      setTimeout(function () {
-        $img.removeClass('pulse');
-      }, 1000);
-    });
   })();
 </script>
 
