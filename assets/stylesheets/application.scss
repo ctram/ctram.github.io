@@ -48,6 +48,12 @@ img {
   }
 }
 
+a {
+  color: #ffff00;
 
-
-
+  &:hover {
+    color: #cccc78;
+    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+  }
+}

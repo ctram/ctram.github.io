@@ -29,4 +29,11 @@ img {
 .contact .linkedin {
   width: 13%; }
 
+a {
+  color: #ffff00; }
+  a:hover {
+    color: #cccc78;
+    text-decoration-line: none;
+    -webkit-text-decoration-line: none; }
+
 /*# sourceMappingURL=application.css.map */
