@@ -1,9 +1,10 @@
-$background: #212b40;
+$background-main: #476080;
+$background-panel: #212b40;
 $bright-teal: #16cfc1;
 $off-white: #f5f5f5;
 
 body {
-  background: $background;
+  background: $background-main;
   color: $off-white;
 }
 
@@ -16,17 +17,31 @@ h1, h2, h3, h4, h5, h6 {
   color: $bright-teal;
 }
 
-h3 {
-  font-size: 1.3rem;
-}
-
 p {
   text-align: left;
 }
 
-header, .projects, .contact {
-  margin: 0 30%;
+.projects {
+  margin: 1% 0 0 0;
+}
+
+header, .panel {
+  // margin: 1% 0;
+  padding: 1% 30%;
   font-size: 18px;
+  background: $background-panel;
+}
+
+.panel {
+  &:nth-child(2) {
+    // margin: 0;
+  }
+}
+
+h2 {
+  margin: 0;
+  padding: 0 30%;
+  background: $background-panel;
 }
 
 img {
