@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
   <title>Chris Tram</title>
 
@@ -9,7 +9,7 @@
   <link href="vendor/stylesheets/animate.css" rel="stylesheet">
   <link href="vendor/stylesheets/loading.css" rel="stylesheet">
 
-  <link href='//fonts.googleapis.com/css?family=PT+Sans|Ubuntu+Condensed|Inconsolata|Play' rel='stylesheet' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=PT+Sans|Ubuntu+Condensed|Inconsolata|Play" rel="stylesheet" type="text/css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="vendor/javascript/underscore.js"></script>
@@ -25,170 +25,123 @@
 </head>
 
 <body>
+  <main>
+    <header>
+      <h1 class="">Chris Tram</h1>
+      <p class="">
+        I am a web developer living in the wonderful San Francisco Bay Area. I am in love with solving problem and building things.
+      </p>
+    </header>
 
-  
-  <!--
-  <div id='loading-curtains' class='animated'>
-    <div id='loading-box'>
-      <div id='loading-text'>
-        Loading...
-      </div>
-      <div id='loading-meter' class='loading animated'>
-      </div>
-    </div>
-  </div>
+    <section class="">
+      <h2>Projects</h2>
 
-  <div class='background-img'>
-  </div>
-
-  -->
-
-  <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
-          <div class="masthead clearfix">
-            <div class="inner">
-              <nav>
-                <!--
-                <ul class="nav masthead-nav">
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-                -->
-              </nav>
+      <section>
+        <figure class="project-img" data-project-name="fosterpals">
+          <a href="http://www.fosterpals.com">
+            <div class="hover-title fosterpals animated">
+              FosterPals
             </div>
-          </div>
+            <img src="assets/images/fosterpals-shot.png">
+          </a>
+        </figure>
+        <p class="">
+          I live with two amazing dogs, both rescued from animal shelters. There is a myth that shelter dogs are somehow not on par with dogs from breeders, which is just not true. FosterPals was created with this in mind and seeks to connect animal rescue groups with gracious people who wish to foster animals until they find their forever homes!
+        </p>
+        <p>
+          Built with: Rails, Backbone.js, jQuery, Bootstrap, PostgreSQL
+        </p>
+      </section>
 
-          <div class="inner cover">
-            <section class='splash'>
-              <div class='headshot animated slideInDown'>
-                <img src='assets/images/headshot-colors.jpg'>
-              </div>
+      <section>
+        <figure class="project-img" data-project-name="space">
+          <a href="http://ctram.github.io/space_debris">
+            <div class="hover-title space animated">
+              Space Debris!
+            </div>
+            <img src="assets/images/space-debris-shot.png">
+          </a>
+        </figure>
+        <p class="project">
+          Space Debris! is my take on the classic game from the golden age of gaming, Asteroids. Piloting your trusty spaceship, you are responsible for ridding the space ways of hazardous debris! Be careful not to accidentally collide with the debris you are trying to dispose of!
+        </p>
+        <p>
+          Built with: JavaScript, HTML Canvas
+        </p>
+      </section>
 
-              <h1 class="cover-heading animated slideInLeft">
-                Chris Tram
-              </h1>
-              <p class="lead animated slideInRight">
-                I am a web developer living in the wonderful San Francisco Bay Area. I am in love with solving problem and building things.
-              </p>
-            </section>
+      <section>
+        <figure class="project-img" data-project-name="chess">
+          <a href="http://www.github.com/ctram/chess">
+            <div class="hover-title chess animated">
+              Chess
+            </div>
+            <img class="chess" src="assets/images/chess.png">
+          </a>
+        </figure>
 
-            <hr>
+          
+        <p class="project">
+          Chess... the timeless game of strategy. Written in Ruby and played from the command line. Currently implemented for two human players.
+        </p>
+        <p>
+          Built with: Ruby
+        </p>
+      </section>
+    </section>
+  
+    <section class="" id="contact">
+      <h2>Contact Me</h2>
+      <section class="contact-links">
+        <a href="http://www.github.com/ctram" title="Github">
+          <img src="assets/images/github-octocat-transparent.png" class="github animated">
+        </a>
 
-            <section class='projects slideInLeft'>
-              <h2>
-                Projects
-              </h2>
-
-              <div class='project slideInLeft'>
-                <div class='project-img' data-project-name='fosterpals'>
-                  <a href='http://www.fosterpals.com'>
-                    <div class='hover-title fosterpals animated'>
-                      FosterPals
-                    </div>
-                    <img src='assets/images/fosterpals-shot.png'>
-                  </a>
-                </div>
-              </div>
-              <p class='project'>
-                I live with two amazing dogs, both rescued from animal shelters. There is a myth that shelter dogs are somehow not on par with dogs from breeders, which is just not true. FosterPals was created with this in mind and seeks to connect animal rescue groups with gracious people who wish to foster animals until they find their forever homes!
-                <br>
-                <br>
-                Built with: Rails, Backbone.js, jQuery, Bootstrap, PostgreSQL
-              </p>
-
-              <div class='project slideInLeft'>
-                <div class='project-img' data-project-name='space'>
-                  <a href='http://ctram.github.io/space_debris'>
-                    <div class='hover-title space animated'>
-                      Space Debris!
-                    </div>
-                    <img src='assets/images/space-debris-shot.png'>
-                  </a>
-                </div>
-              </div>
-              <p class='project'>
-                Space Debris! is my take on the classic game from the golden age of gaming, Asteroids. Piloting your trusty spaceship, you are responsible for ridding the space ways of hazardous debris! Be careful not to accidentally collide with the debris you are trying to dispose of!
-                <br>
-                <br>
-                Built with: JavaScript, HTML Canvas
-              </p>
-
-              <div class='project slideInLeft'>
-                <div class='project-img' data-project-name='chess'>
-                  <a href='http://www.github.com/ctram/chess'>
-                    <div class='hover-title chess animated'>
-                      Chess
-                    </div>
-                    <img class='chess' src='assets/images/chess.png'>
-                  </a>
-                </div>
-              </div>
-              <p class='project'>
-                Chess... the timeless game of strategy. Written in Ruby and played from the command line. Currently implemented for two human players.
-                <br>
-                <br>
-                Built with: Ruby
-              </p>
-            </section>
-
-            <hr>
-
-            <section class='links slideInRight' id='contact'>
-              <h3>Contact Me</h3>
-              <div class='contact-links'>
-                <a href='http://www.github.com/ctram' title='Github'>
-                  <img src='assets/images/github-octocat-transparent.png' class='github animated'>
-                </a>
-
-                <a href='https://www.linkedin.com/in/tramchris' title='LinkedIn'>
-                  <img src='assets/images/linkedin-transparent.png' class='linkedin animated'>
-                </a>
+        <a href="https://www.linkedin.com/in/tramchris" title="LinkedIn">
+          <img src="assets/images/linkedin-transparent.png" class="linkedin animated">
+        </a>
 
 
-                <a href="mailto:chris.tram@gmail.com" title='Email: chris.tram@gmail.com'>
-                  <img src='assets/images/@@@.png' class='at-sign animated'>
-                </a>
+        <a href="mailto:chris.tram@gmail.com" title="Email: chris.tram@gmail.com">
+          <img src="assets/images/@@@.png" class="at-sign animated">
+        </a>
 
-                <a href='assets/pdfs/Chris-Tram-Resume.pdf' title='Resume PDF'>
-                  <img src='assets/images/google_docs.png' class='gdocs animated'>
-                </a>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        <a href="assets/pdfs/Chris-Tram-Resume.pdf" title="Resume PDF">
+          <img src="assets/images/google_docs.png" class="gdocs animated">
+        </a>
+      </section>
+    </section>
+  </main>
 </body>
 
 <script>
   (function () {
     var checkReady = setInterval(function () {
-      if (document.readyState === 'complete') {
-        $('#loading-curtains').removeClass('loading').addClass('slideOutRight');
+      if (document.readyState === "complete") {
+        $("#loading-curtains").removeClass("loading").addClass("slideOutRight");
         setTimeout(function () {
-          $('#loading-curtains').remove();
+          $("#loading-curtains").remove();
         }, 5000);
 
-        $('.project').on('mouseenter', '.hover-title', function (evt) {
-          $(evt.currentTarget).removeClass('fadeIn').addClass('fadeOut');
+        $(".project").on("mouseenter", ".hover-title", function (evt) {
+          $(evt.currentTarget).removeClass("fadeIn").addClass("fadeOut");
         });
 
-        $('.project').on('mouseleave', '.hover-title', function (evt) {
-          $(evt.currentTarget).removeClass('fadeOut').addClass('fadeIn');
+        $(".project").on("mouseleave", ".hover-title", function (evt) {
+          $(evt.currentTarget).removeClass("fadeOut").addClass("fadeIn");
         })
 
-        $('.contact-links img').mouseenter(function (evt) {
+        $(".contact-links img").mouseenter(function (evt) {
           var $img = $(evt.target);
-          $img.addClass('pulse');
+          $img.addClass("pulse");
           setTimeout(function () {
-            $img.removeClass('pulse');
+            $img.removeClass("pulse");
           }, 1000);
         });
       }
     }, 1);
 
-    while (document.getElementById('loading-curtains') !== null) {
+    while (document.getElementById("loading-curtains") !== null) {
       checkReady();
     }
   })();
@@ -199,12 +152,12 @@
 
 <script>
   // Google Analytics
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
 
-  ga('create', 'UA-66725204-1', 'auto');
-  ga('send', 'pageview');
+  ga("create", "UA-66725204-1", "auto");
+  ga("send", "pageview");
 
 </script>
