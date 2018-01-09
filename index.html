@@ -1,109 +1,114 @@
 <!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1", user-scalable=no>
   <title>Chris Tram</title>
-  <link rel="stylesheet"    
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link href="assets/stylesheets/application.css" rel="stylesheet">
 </head>
 
 <body>
-  <main>
-    <header>
-      <h1>Chris Tram</h1>
-      <section>
-        <p>
-          I am a web developer living in the wonderful San Francisco Bay Area. I am in love with solving problem and building things.
-        </p>
-      </section>
-      <address class="contact">
-        <h3>Contact Me</h3>
-        <a href="http://www.github.com/ctram" title="Github">
-          <img src="assets/images/github-octocat-transparent.png" class="github">
-        </a>
-        <a href="https://www.linkedin.com/in/tramchris" title="LinkedIn">
-          <img src="assets/images/linkedin-transparent.png" class="linkedin animated">
-        </a>
-        <a href="mailto:chris.tram@gmail.com" title="Email: chris.tram@gmail.com">
-          <img src="assets/images/@@@.png" class="at-sign">
-        </a>
-        <a href="assets/pdfs/Chris-Tram-Resume.pdf" title="Resume PDF">
-          <img src="assets/images/google_docs.png" class="gdocs">
-        </a>
-      </address>
-    </header>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <main class="col-10 col-md-6">
+        <header>
+          <h1>Chris Tram</h1>
+          <section>
+            <p>
+              I am a web developer living in the wonderful San Francisco Bay Area. I am in love with solving problem and building things.
+            </p>
+          </section>
+          <address class="contact">
+            <h3>Contact Me</h3>
+            <a href="http://www.github.com/ctram" title="Github">
+              <img src="assets/images/github-octocat-transparent.png" class="github">
+            </a>
+            <a href="https://www.linkedin.com/in/tramchris" title="LinkedIn">
+              <img src="assets/images/linkedin-transparent.png" class="linkedin animated">
+            </a>
+            <a href="mailto:chris.tram@gmail.com" title="Email: chris.tram@gmail.com">
+              <img src="assets/images/@@@.png" class="at-sign">
+            </a>
+            <a href="assets/pdfs/Chris-Tram-Resume.pdf" title="Resume PDF">
+              <img src="assets/images/google_docs.png" class="gdocs">
+            </a>
+          </address>
+        </header>
+        <section class="projects">
+          <h2>Projects</h2>
 
-    <section class="projects">
-      <h2>Projects</h2>
+          <section class="panel">
+            <h3>Local Live Music Bulletin</h3>
+            <p>
+              Web scraper project.
+            </p>
+          </section>
 
-      <section class="panel">
-        <h3>Local Live Music Bulletin</h3>
-        <p>
-          Web scraper project.
-        </p>
-      </section>
-      
-      <section class="panel">
-        <h3>FosterPals</h3>
-        <p>
-          I live with two amazing dogs, both rescued from animal shelters. There is a myth that shelter dogs are somehow not on par
-          with dogs from breeders, which is just not true. FosterPals was created with this in mind and seeks to connect
-          animal rescue groups with gracious people who wish to foster animals until they find their forever homes!
-        </p>
-        <p>
-          Built with: <b>Rails, Backbone.js, jQuery, Bootstrap, PostgreSQL</b>
-        </p>
-        <figure class="project-img" data-project-name="fosterpals">
-          <a href="http://www.fosterpals.com">
-            <img src="assets/images/fosterpals-shot.png">
-          </a>
-        </figure>
-      </section>
+          <section class="panel">
+            <h3>FosterPals</h3>
+            <p>
+              I live with two amazing dogs, both rescued from animal shelters. There is a myth that shelter dogs are somehow not on par
+              with dogs from breeders, which is just not true. FosterPals was created with this in mind and seeks to connect
+              animal rescue groups with gracious people who wish to foster animals until they find their forever homes!
+            </p>
+            <p>
+              Built with:
+              <b>Rails, Backbone.js, jQuery, Bootstrap, PostgreSQL</b>
+            </p>
+            <figure class="project-img" data-project-name="fosterpals">
+              <a href="http://www.fosterpals.com">
+                <img src="assets/images/fosterpals-shot.png">
+              </a>
+            </figure>
+          </section>
 
-      <section class="panel">
-        <h3>Space Debris!</h3>
-        <p>
-          Space Debris! is my take on the classic game from the golden age of gaming, Asteroids. Piloting your trusty spaceship, you
-          are responsible for ridding the space ways of hazardous debris! Be careful not to accidentally collide with the
-          debris you are trying to dispose of!
-        </p>
-        <p>
-          Built with: <b>JavaScript, HTML Canvas</b>
-        </p>
-        <figure class="project-img" data-project-name="space">
-          <a href="http://ctram.github.io/space_debris">
-            <img src="assets/images/space-debris-shot.png">
-          </a>
-        </figure>
-      </section>
+          <section class="panel">
+            <h3>Space Debris!</h3>
+            <p>
+              Space Debris! is my take on the classic game from the golden age of gaming, Asteroids. Piloting your trusty spaceship, you
+              are responsible for ridding the space ways of hazardous debris! Be careful not to accidentally collide with
+              the debris you are trying to dispose of!
+            </p>
+            <p>
+              Built with:
+              <b>JavaScript, HTML Canvas</b>
+            </p>
+            <figure class="project-img" data-project-name="space">
+              <a href="http://ctram.github.io/space_debris">
+                <img src="assets/images/space-debris-shot.png">
+              </a>
+            </figure>
+          </section>
 
-      <section class="panel">
-        <h3>Chess</h3>
-        <p>
-          The timeless game of strategy. Written in Ruby and played from the command line. Currently implemented for two human players.
-        </p>
-        <p>
-          Built with: <b>Ruby</b> 
-        </p>
-        <figure class="project-img" data-project-name="chess">
-          <a href="http://www.github.com/ctram/chess">
-            <img class="chess" src="assets/images/chess.png">
-          </a>
-        </figure>
-      </section>
+          <section class="panel">
+            <h3>Chess</h3>
+            <p>
+              The timeless game of strategy. Written in Ruby and played from the command line. Currently implemented for two human players.
+            </p>
+            <p>
+              Built with:
+              <b>Ruby</b>
+            </p>
+            <figure class="project-img" data-project-name="chess">
+              <a href="http://www.github.com/ctram/chess">
+                <img class="chess" src="assets/images/chess.png">
+              </a>
+            </figure>
+          </section>
 
-      <section class="panel">
-        <h3>Scroll with Stationary Cursor</h3>
-        <p>
-          A simple Visual Studio Code extension that keeps the vertical location of the cursor stationary when scrolling a file.
-        </p>
-        <a href="https://github.com/ctram/scroll-with-stationary-cursor"  
-          title="Scroll with Stationary Cursor">
-          Github
-        </a>
-      </section>
-    </section>
-  </main>
+          <section class="panel">
+            <h3>Scroll with Stationary Cursor</h3>
+            <p>
+              A simple Visual Studio Code extension that keeps the vertical location of the cursor stationary when scrolling a file.
+            </p>
+            <a href="https://github.com/ctram/scroll-with-stationary-cursor" title="Scroll with Stationary Cursor">
+              Github
+            </a>
+          </section>
+        </section>
+      </main>
+    </div>
+  </div>
 </body>
 </html>

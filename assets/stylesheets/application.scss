@@ -22,14 +22,14 @@ p {
 }
 
 .projects {
-  margin: 1% 0 0 0;
+  // margin: 1% 0 0 0;
 }
 
 header, .panel {
   // margin: 1% 0;
-  padding: 1% 30%;
+  // padding: 1% 30%;
   font-size: 18px;
-  background: $background-panel;
+  // background: $background-panel;
 }
 
 .panel {
@@ -39,9 +39,9 @@ header, .panel {
 }
 
 h2 {
-  margin: 0;
-  padding: 0 30%;
-  background: $background-panel;
+  // margin: 0;
+  // padding: 0 30%;
+  // background: $background-panel;
 }
 
 img {
@@ -72,3 +72,29 @@ a {
     -webkit-text-decoration-line: none;
   }
 }
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { 
+  body {
+    background: green;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) { 
+  body {
+    background: yellow;
+  }
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) { 
+  body {
+    background: red;
+  }
+}
+
