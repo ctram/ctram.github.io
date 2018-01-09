@@ -5,13 +5,19 @@ body {
 hr {
   border-top-color: rgba(115, 225, 93, 0.2); }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #16cfc1; }
 
 p {
   text-align: left; }
 
-header, .panel {
+header,
+.panel {
   font-size: 18px; }
 
 img {
@@ -20,7 +26,8 @@ img {
 .contact img {
   width: 10%; }
 
-.contact .at-sign, .contact .gdocs {
+.contact .at-sign,
+.contact .gdocs {
   width: 8%; }
 .contact .linkedin {
   width: 13%; }
@@ -33,16 +40,7 @@ a {
     -webkit-text-decoration-line: none; }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  body {
-    background: green; } }
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  body {
-    background: yellow; } }
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  body {
-    background: red; } }
 
 /*# sourceMappingURL=application.css.map */

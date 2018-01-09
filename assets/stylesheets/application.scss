@@ -12,8 +12,12 @@ hr {
   border-top-color: rgba(115, 225, 93, 0.2);
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $bright-teal;
 }
 
@@ -25,7 +29,8 @@ p {
   // margin: 1% 0 0 0;
 }
 
-header, .panel {
+header,
+.panel {
   // margin: 1% 0;
   // padding: 1% 30%;
   font-size: 18px;
@@ -55,7 +60,8 @@ img {
 }
 
 .contact {
-  .at-sign, .gdocs {
+  .at-sign,
+  .gdocs {
     width: 8%;
   }
   .linkedin {
@@ -78,23 +84,13 @@ $screen-md-min: 992px;
 $screen-lg-min: 1200px;
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) { 
-  body {
-    background: green;
-  }
+@media (min-width: $screen-sm-min) {
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) { 
-  body {
-    background: yellow;
-  }
- }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) { 
-  body {
-    background: red;
-  }
+@media (min-width: $screen-md-min) {
 }
 
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+}
