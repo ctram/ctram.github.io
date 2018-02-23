@@ -2,113 +2,87 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" >
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Chris Tram</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto+Slab:100" rel="stylesheet">
   <link href="assets/stylesheets/application.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <main class="col-10 col-md-6">
-        <header>
-          <h1>Chris Tram</h1>
-          <section>
-            <p>
-              I am a web developer living in the wonderful San Francisco Bay Area. I am in love with solving problem and building things.
-            </p>
-          </section>
-          <address class="contact">
-            <h3>Contact Me</h3>
-            <a href="http://www.github.com/ctram" title="Github">
-              <img src="assets/images/github-octocat-transparent.png" class="github">
-            </a>
-            <a href="https://www.linkedin.com/in/tramchris" title="LinkedIn">
-              <img src="assets/images/linkedin-transparent.png" class="linkedin animated">
-            </a>
-            <a href="mailto:chris.tram@gmail.com" title="Email: chris.tram@gmail.com">
-              <img src="assets/images/@@@.png" class="at-sign">
-            </a>
-            <a href="assets/pdfs/Chris-Tram-Resume.pdf" title="Resume PDF">
-              <img src="assets/images/google_docs.png" class="gdocs">
-            </a>
-          </address>
-        </header>
-        <section class="projects">
-          <h2>Projects</h2>
+  <main class="container-fluid">
+    <header>
+      <section class="row hero justify-content-center">
+        <h1 class="col-3">Chris Tram</h1>
+        <img class="line" src="assets/images/black-fancy-line.png" />
+        <div class="col-3 info">
+          <div class="occupation">Web Developer</span>
+          <div class="location">San Francisco Bay Area</span>
+        </div>
+      </section>
 
-          <section class="panel">
-            <h3>Local Live Music Bulletin</h3>
-            <p>
-              Web scraper project.
-            </p>
-          </section>
+      <section class="intro row justify-context-center">
+        <p class="mission">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+      <section class="contact-info justify-content-center row">
+        <a href="https://github.com/ctram?tab=repositories">
+          <img src="assets/images/github-mark-logo-400x400.png" />
+        </a>
+        <a href="https://www.linkedin.com/in/tramchris">
+          <img class="linkedin" src="assets/images/linkedin-transparent.png" />
+        </a>
+        <a href="">
+          <img src="assets/images/google_docs.png" />
+        </a>
+      </section>
+    </header>
+    <hr/>
+    <section class="projects ">
+      <div class="row justify-content-center">
+        <h1>Projects</h1>
+      </div>
+      <!-- 
 
-          <section class="panel">
-            <h3>FosterPals</h3>
-            <p>
-              I live with two amazing dogs, both rescued from animal shelters. There is a myth that shelter dogs are somehow not on par
-              with dogs from breeders, which is just not true. FosterPals was created with this in mind and seeks to connect
-              animal rescue groups with gracious people who wish to foster animals until they find their forever homes!
-            </p>
-            <p>
-              Built with:
-              <b>Rails, Backbone.js, jQuery, Bootstrap, PostgreSQL</b>
-            </p>
-            <figure class="project-img" data-project-name="fosterpals">
-              <a href="http://www.fosterpals.com">
-                <img src="assets/images/fosterpals-shot.png">
-              </a>
-            </figure>
-          </section>
+        <div class="row project other-app justify-content-center">
+          <h3>Other App</h3>
+          <img src="assets/images/placeholder" />
+        </div>
 
-          <section class="panel">
-            <h3>Space Debris!</h3>
-            <p>
-              Space Debris! is my take on the classic game from the golden age of gaming, Asteroids. Piloting your trusty spaceship, you
-              are responsible for ridding the space ways of hazardous debris! Be careful not to accidentally collide with
-              the debris you are trying to dispose of!
-            </p>
-            <p>
-              Built with:
-              <b>JavaScript, HTML Canvas</b>
-            </p>
-            <figure class="project-img" data-project-name="space">
-              <a href="http://ctram.github.io/space_debris">
-                <img src="assets/images/space-debris-shot.png">
-              </a>
-            </figure>
-          </section>
-
-          <section class="panel">
-            <h3>Chess</h3>
-            <p>
-              The timeless game of strategy. Written in Ruby and played from the command line. Currently implemented for two human players.
-            </p>
-            <p>
-              Built with:
-              <b>Ruby</b>
-            </p>
-            <figure class="project-img" data-project-name="chess">
-              <a href="http://www.github.com/ctram/chess">
-                <img class="chess" src="assets/images/chess.png">
-              </a>
-            </figure>
-          </section>
-
-          <section class="panel">
-            <h3>Scroll with Stationary Cursor</h3>
-            <p>
-              A simple Visual Studio Code extension that keeps the vertical location of the cursor stationary when scrolling a file.
-            </p>
-            <a href="https://github.com/ctram/scroll-with-stationary-cursor" title="Scroll with Stationary Cursor">
-              Github
-            </a>
-          </section>
-        </section>
-      </main>
-    </div>
-  </div>
+       -->
+      
+      <div class="row project foster-pals justify-content-center ">
+        <h3>Foster Pals</h3>
+        <div class="links">
+          <a href="https://github.com/ctram/foster_pals">code</a>
+        </div>
+        <img src="assets/images/fosterpals-shot.png" />
+      </div>
+      <div class="row project space-debris justify-content-center ">
+        <h3>Space Debris</h3>
+        <div class="links">
+          <a href="https://github.com/ctram/space_debris">code</a>
+        </div>
+        <img src="assets/images/space-debris-shot.png" />
+      </div>
+      <div class="row project chess justify-content-center ">
+        <h3>Chess</h3>
+        <div class="links">
+          <a href="https://github.com/ctram/chess">code</a>
+        </div>
+        <img src="assets/images/chess.png" />
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
 </body>
+
 </html>

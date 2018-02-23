@@ -1,15 +1,40 @@
-$background-main: #476080;
+$font-roboto: 'Roboto Slab', serif;
+$font-nunito: 'Nunito', sans-serif;
+$font-fancy: 'IM Fell English', serif;
+
+$off-white: #f5f5f5;
+$background-main: $off-white;
+$panel-font-color: $background-main;
+$off-black: #212b40;
 $background-panel: #212b40;
 $bright-teal: #16cfc1;
-$off-white: #f5f5f5;
 
 body {
   background: $background-main;
-  color: $off-white;
+  color: $off-black;
+  font-family: $font-roboto;
 }
 
 hr {
-  border-top-color: rgba(115, 225, 93, 0.2);
+  border-top-color: rgba(156, 171, 187, 0.2);
+  width: 50%;
+}
+
+a {
+  color: $off-black;
+
+  &:hover {
+    color: $off-black;
+  }
+}
+
+.links {
+  width: 100%;
+  text-align: center;
+}
+
+.mission {
+  padding: 0 20%;
 }
 
 h1,
@@ -18,65 +43,83 @@ h3,
 h4,
 h5,
 h6 {
-  color: $bright-teal;
+  margin: 1em;
+  width: 100%;
 }
 
 p {
   text-align: left;
 }
 
-.projects {
-  // margin: 1% 0 0 0;
-}
-
-header,
-.panel {
-  // margin: 1% 0;
-  // padding: 1% 30%;
-  font-size: 18px;
-  // background: $background-panel;
+.occupation {
+  // font-family: $font-fancy;
+  font-size: 32px;
 }
 
 .panel {
-  &:nth-child(2) {
-    // margin: 0;
+  background: #dfdfdf;
+}
+
+header {
+  margin-top: 5em;
+}
+
+.hero {
+  font-family: $font-fancy;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-size: 75px;
+    text-align: right;
+  }
+
+  .line {
+    height: 10em;
+    top: -2em;
+    position: relative;
+  }
+
+  .info {
+    text-align: left;
+  }
+  .location {
+    font-size: 24px;
   }
 }
 
-h2 {
-  // margin: 0;
-  // padding: 0 30%;
-  // background: $background-panel;
-}
-
-img {
-  width: 100%;
-}
-
-.contact {
+.contact-info {
   img {
-    width: 10%;
+    height: 2em;
+    margin: 0 0.5em;
+
+    &.linkedin {
+      margin: 0;
+    }
   }
 }
 
-.contact {
-  .at-sign,
-  .gdocs {
-    width: 8%;
-  }
-  .linkedin {
-    width: 13%;
+.projects {
+  
+  h1 {
+    text-align: center;
+    font-weight: 1000;
   }
 }
 
-a {
-  color: #ffff00;
-
-  &:hover {
-    color: #cccc78;
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none;
+.project {
+  padding: 0 0 3em 0;
+  img {
+    height: 30em;
+    border-radius: 0.5em;
   }
+  h3 {
+    text-align: center;
+  }
+}
+
+.horizontal-break {
+  transform: scale(3);
 }
 
 $screen-sm-min: 768px;

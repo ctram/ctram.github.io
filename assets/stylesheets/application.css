@@ -1,9 +1,23 @@
 body {
-  background: #476080;
-  color: #f5f5f5; }
+  background: #f5f5f5;
+  color: #212b40;
+  font-family: "Roboto Slab", serif; }
 
 hr {
-  border-top-color: rgba(115, 225, 93, 0.2); }
+  border-top-color: rgba(156, 171, 187, 0.2);
+  width: 50%; }
+
+a {
+  color: #212b40; }
+  a:hover {
+    color: #212b40; }
+
+.links {
+  width: 100%;
+  text-align: center; }
+
+.mission {
+  padding: 0 20%; }
 
 h1,
 h2,
@@ -11,33 +25,57 @@ h3,
 h4,
 h5,
 h6 {
-  color: #16cfc1; }
+  margin: 1em;
+  width: 100%; }
 
 p {
   text-align: left; }
 
-header,
+.occupation {
+  font-size: 32px; }
+
 .panel {
-  font-size: 18px; }
+  background: #dfdfdf; }
 
-img {
-  width: 100%; }
+header {
+  margin-top: 5em; }
 
-.contact img {
-  width: 10%; }
+.hero {
+  font-family: "IM Fell English", serif;
+  text-align: center; }
+  .hero h1 {
+    margin: 0;
+    font-size: 75px;
+    text-align: right; }
+  .hero .line {
+    height: 10em;
+    top: -2em;
+    position: relative; }
+  .hero .info {
+    text-align: left; }
+  .hero .location {
+    font-size: 24px; }
 
-.contact .at-sign,
-.contact .gdocs {
-  width: 8%; }
-.contact .linkedin {
-  width: 13%; }
+.contact-info img {
+  height: 2em;
+  margin: 0 0.5em; }
+  .contact-info img.linkedin {
+    margin: 0; }
 
-a {
-  color: #ffff00; }
-  a:hover {
-    color: #cccc78;
-    text-decoration-line: none;
-    -webkit-text-decoration-line: none; }
+.projects h1 {
+  text-align: center;
+  font-weight: 1000; }
+
+.project {
+  padding: 0 0 3em 0; }
+  .project img {
+    height: 30em;
+    border-radius: 0.5em; }
+  .project h3 {
+    text-align: center; }
+
+.horizontal-break {
+  transform: scale(3); }
 
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
