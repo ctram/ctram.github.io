@@ -44,7 +44,7 @@ h4,
 h5,
 h6 {
   margin: 1em;
-  width: 100%;
+  // width: 100%;
 }
 
 p {
@@ -64,25 +64,31 @@ header {
   margin-top: 5em;
 }
 
+section {
+  margin: 1em 0;
+}
+
 .hero {
   font-family: $font-fancy;
   text-align: center;
+  vertical-align: middle;
 
   h1 {
-    margin: 0;
+    margin: auto 0;
     font-size: 75px;
-    text-align: right;
   }
 
   .line {
-    height: 10em;
-    top: -2em;
+    max-height: 10em;
+    top: -4px;
     position: relative;
+    display: none;
   }
 
   .info {
-    text-align: left;
+    margin: auto 0;
   }
+
   .location {
     font-size: 24px;
   }
@@ -100,7 +106,6 @@ header {
 }
 
 .projects {
-  
   h1 {
     text-align: center;
     font-weight: 1000;
@@ -109,8 +114,13 @@ header {
 
 .project {
   padding: 0 0 3em 0;
+
+  & > div {
+    text-align: center;
+  }
+
   img {
-    height: 30em;
+    max-height: 12em;
     border-radius: 0.5em;
   }
   h3 {
@@ -128,12 +138,41 @@ $screen-lg-min: 1200px;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
+  .hero {
+    h1 {
+      text-align: right;
+    }
+
+    .line {
+      display: initial;
+    }
+
+    .info {
+      text-align: left;
+    }
+  }
+
+  .project {
+    img {
+      max-height: 20em;
+    }
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
+  .project {
+    img {
+      max-height: 25em;
+    }
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
+  .project {
+    img {
+      max-height: 30em;
+    }
+  }
 }
