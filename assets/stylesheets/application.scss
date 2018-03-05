@@ -1,6 +1,6 @@
 $font-roboto: 'Roboto Slab', serif;
-$font-nunito: 'Nunito', sans-serif;
 $font-fancy: 'IM Fell English', serif;
+$font-karma: 'Karma', serif;
 
 $off-white: #f5f5f5;
 $background-main: $off-white;
@@ -12,7 +12,7 @@ $bright-teal: #16cfc1;
 body {
   background: $background-main;
   color: $off-black;
-  font-family: $font-roboto;
+  font-family: karma;
 }
 
 hr {
