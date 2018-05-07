@@ -1,178 +1,75 @@
-$font-roboto: 'Roboto Slab', serif;
-$font-fancy: 'IM Fell English', serif;
-$font-karma: 'Karma', serif;
-
-$off-white: #f5f5f5;
-$background-main: $off-white;
-$panel-font-color: $background-main;
-$off-black: #212b40;
-$background-panel: #212b40;
-$bright-teal: #16cfc1;
+@import '_variables';
+@import '_fonts';
 
 body {
-  background: $background-main;
-  color: $off-black;
-  font-family: karma;
+  background-color: $background-color-main;
+  color: $main-color;
+  @include font-work();
 }
 
-hr {
-  border-top-color: rgba(156, 171, 187, 0.2);
-  width: 50%;
+main {
+  padding-top: 4em;
+}
+
+aside {
+  background: white;
+  color: black;
+  height: inherit;
+  text-align: right;
+
+  h1 {
+    font-weight: 600;
+    @include font-amiri();
+    margin-bottom: 0;
+  }
+
+  .occupation {
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 2em;
+  }
+}
+
+.sidebar {
+  padding-left: 4em;
+  padding-top: 4em;
 }
 
 a {
-  color: $off-black;
-
+  color: black;
   &:hover {
-    color: $off-black;
+    color: #0056b3;
+    text-decoration: none;
   }
 }
 
-.links {
-  width: 100%;
-  text-align: center;
-}
-
-.mission {
-  padding: 0 20%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 1em;
-  // width: 100%;
-}
-
-p {
+h2 {
   text-align: left;
+  // font-weight: 800;
+  // @include font-crimson;
 }
 
-.occupation {
-  // font-family: $font-fancy;
-  font-size: 32px;
-}
-
-.panel {
-  background: #dfdfdf;
-}
-
-header {
-  margin-top: 5em;
+h3 {
+  font-size: 1.6em;
 }
 
 section {
-  margin: 1em 0;
-}
-
-.hero {
-  font-family: $font-fancy;
   text-align: center;
-  vertical-align: middle;
-
-  h1 {
-    margin: auto 0;
-    font-size: 75px;
-  }
-
-  .line {
-    max-height: 10em;
-    top: -4px;
-    position: relative;
-    display: none;
-  }
-
-  .info {
-    margin: auto 0;
-  }
-
-  .location {
-    font-size: 24px;
-  }
-}
-
-.contact-info {
-  img {
-    height: 2em;
-    margin: 0 0.5em;
-
-    &.linkedin {
-      margin: 0;
-    }
-  }
 }
 
 .projects {
-  h1 {
-    text-align: center;
-    font-weight: 1000;
-  }
-}
-
-.project {
-  padding: 0 0 3em 0;
-
-  & > div {
-    text-align: center;
-  }
-
   img {
-    max-height: 12em;
-    border-radius: 0.5em;
+    width: 60%;
   }
-  h3 {
-    text-align: center;
-  }
-}
-
-.horizontal-break {
-  transform: scale(3);
-}
-
-$screen-sm-min: 768px;
-$screen-md-min: 992px;
-$screen-lg-min: 1200px;
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) {
-  .hero {
-    h1 {
-      text-align: right;
-    }
-
-    .line {
-      display: initial;
-    }
-
-    .info {
-      text-align: left;
-    }
-  }
-
   .project {
-    img {
-      max-height: 20em;
-    }
+    margin: 4em 0;
   }
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) {
-  .project {
-    img {
-      max-height: 25em;
-    }
-  }
+.hero {
+  height: 300px;
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {
-  .project {
-    img {
-      max-height: 30em;
-    }
-  }
+.skill-set {
+  height: 300px;
 }
