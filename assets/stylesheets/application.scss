@@ -1,0 +1,36 @@
+// Core variables and mixins
+@import 'variables.scss';
+@import 'mixins.scss';
+// Global CSS
+@import 'global.scss';
+@import 'nav.scss';
+@import 'resume-item.scss';
+@import 'bootstrap-overrides.scss';
+// Components
+
+.relevant-courses {
+  font-size: 1em;
+
+  ul {
+    font-size: 0.9em;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+#projects {
+  img {
+    border-radius: 5px;
+  }
+  // .dimmer {
+  //   background-color: rgba($color: #000000, $alpha: 1);
+  //   transition-property: opacity;
+  //   transition-duration: 0.5s;
+
+  //   &:hover {
+  //     opacity: 0;
+  //   }
+  // }
+}
