@@ -114,5 +114,11 @@ a {
 
 #projects img {
   border-radius: 5px; }
+#projects .content .header {
+  color: #ced4da; }
+#projects .content .devicon-github-plain {
+  color: #868e96; }
+#projects .content a {
+  text-decoration-line: none; }
 
 /*# sourceMappingURL=application.css.map */
