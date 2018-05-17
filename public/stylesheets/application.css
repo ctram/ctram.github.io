@@ -1,19 +1,20 @@
 body {
-  font-family: 'Open Sans', serif;
+  font-family: 'Lato', sans-serif;
   padding-top: 54px;
-  color: #868e96; }
+  color: #868e96;
+  text-align: justify; }
 
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem; } }
+    padding-left: 15rem; } }
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40; }
@@ -23,25 +24,30 @@ h1 {
   line-height: 5.5rem; }
 
 h2 {
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  color: #ffc107; }
 
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 1.35rem; }
 
 .list-social-icons a {
   color: #495057; }
   .list-social-icons a:hover {
-    color: #00242b; }
+    color: #ffc107; }
   .list-social-icons a .fa-lg {
     font-size: 1.75rem; }
 
 .list-icons {
   font-size: 3rem; }
   .list-icons .list-inline-item i:hover {
-    color: #00242b; }
+    color: #ffc107; }
+
+a {
+  -webkit-text-decoration: none;
+  text-decoration: none; }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
@@ -55,7 +61,7 @@ h2 {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 15rem;
     height: 100vh; }
     #sideNav .navbar-brand {
       display: flex;
@@ -95,15 +101,15 @@ section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important; } }
 .bg-primary {
-  background-color: #00242b !important; }
+  background-color: #ffc107 !important; }
 
 .text-primary {
-  color: #00242b !important; }
+  color: #ffc107 !important; }
 
 a {
-  color: #00242b; }
+  color: #ffc107; }
   a:hover, a:focus, a:active {
-    color: black; }
+    color: #ba8b00; }
 
 .relevant-courses {
   font-size: 1em; }
@@ -120,5 +126,7 @@ a {
   color: #868e96; }
 #projects .content a {
   text-decoration-line: none; }
+#projects .resume-item {
+  margin-bottom: 5em; }
 
 /*# sourceMappingURL=application.css.map */

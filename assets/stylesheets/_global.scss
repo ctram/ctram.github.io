@@ -4,6 +4,7 @@ body {
   @include body-font;
   padding-top: 54px;
   color: $gray-600;
+  text-align: justify;
 }
 @media (min-width: 992px) {
   body {
@@ -31,6 +32,7 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
+  color: $primary;
 }
 
 .subheading {
@@ -59,4 +61,9 @@ h2 {
       color: $primary;
     }
   }
+}
+
+a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
