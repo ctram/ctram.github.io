@@ -2870,10 +2870,6 @@ semantic-ui-dimmer@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/semantic-ui-dimmer/-/semantic-ui-dimmer-2.3.1.tgz#bb2ff8e0e7abd08561d079c7f35ed759489647e4"
 
-semantic-ui-transition@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/semantic-ui-transition/-/semantic-ui-transition-2.3.1.tgz#4e43c65b4d9b923c15f2328543558e48c582d51c"
-
 "semver@2 || 3 || 4 || 5", semver@^5.3.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
