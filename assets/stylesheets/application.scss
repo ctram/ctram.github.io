@@ -6,8 +6,8 @@
 @import 'nav.scss';
 @import 'resume-item.scss';
 @import 'bootstrap-overrides.scss';
-// Components
 
+// Components
 .relevant-courses {
   font-size: 1em;
 
@@ -23,6 +23,8 @@
 #projects {
   img {
     border-radius: 5px;
+    max-width: 900px;
+    border: 1px solid #d3d3d3;
   }
 
   .content {
