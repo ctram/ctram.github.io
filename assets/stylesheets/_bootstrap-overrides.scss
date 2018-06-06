@@ -14,3 +14,26 @@ a {
     color: darken($primary, 15%);
   }
 }
+
+.btn-primary {
+  background-color: $monokai-red;
+  border-color: $monokai-red;
+
+  &:hover {
+    background: $white;
+    color: $monokai-red;
+    border-color: $monokai-red;
+  }
+}
+
+.btn-dark {
+  background-color: $monokai-black;
+  border-color: $monokai-black;
+
+  &:hover {
+    background-color: $white;
+    border-color: $monokai-red !important;
+    color: $monokai-red;
+  }
+}
+

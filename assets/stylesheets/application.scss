@@ -10,7 +10,6 @@
 // Components
 .relevant-courses {
   font-size: 1em;
-
   ul {
     font-size: 0.9em;
 
@@ -41,5 +40,14 @@
 
   .resume-item {
     margin-bottom: 5em;
+  }
+}
+
+.code-text {
+  color: $monokai-red;
+
+  .btn-dark:hover & {
+    color: $monokai-red;
+    // backcolor: $white;
   }
 }

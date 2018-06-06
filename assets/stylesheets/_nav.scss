@@ -1,9 +1,9 @@
 #sideNav {
-  .navbar-brand {}
   .navbar-nav .nav-item .nav-link {
     font-weight: 600;
     text-transform: uppercase;
   }
+  background-color: $monokai-black;
 }
 
 @media (min-width: 992px) {
