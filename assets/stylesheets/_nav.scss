@@ -26,7 +26,8 @@
       .img-profile {
         max-width: 10rem;
         max-height: 10rem;
-        border: 0.5rem solid fade-out($white, 0.8);
+        border: 0.2rem solid $monokai-red;
+        border-radius: 20% !important;
       }
     }
     .navbar-collapse {
