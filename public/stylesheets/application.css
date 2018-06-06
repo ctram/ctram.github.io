@@ -20,9 +20,13 @@ h6 {
   color: #343a40; }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem; }
+  font-size: 3rem;
+  line-height: 2.25rem; }
 
+@media (min-width: 768px) {
+  h1 {
+    font-size: 6rem;
+    line-height: 5.5rem; } }
 h2 {
   font-size: 3.5rem;
   color: #f92672; }
@@ -140,7 +144,8 @@ a {
 #projects img {
   border-radius: 5px;
   max-width: 900px;
-  border: 1px solid #d3d3d3; }
+  border: 1px solid #d3d3d3;
+  object-fit: cover; }
 #projects .content .header {
   color: #ced4da; }
 #projects .content .devicon-github-plain {
@@ -154,5 +159,9 @@ a {
   color: #f92672; }
   .btn-dark:hover .code-text {
     color: #f92672; }
+
+.email {
+  line-height: 1.2em;
+  font-size: 1.5em; }
 
 /*# sourceMappingURL=application.css.map */

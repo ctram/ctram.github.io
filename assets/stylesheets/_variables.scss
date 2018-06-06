@@ -28,6 +28,7 @@ $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 $dark-teal: #00242b;
 
+// Monokai palette
 $monokai-black: #272822;
 $monokai-red: #f92672;
 $monokai-blue: #66d9ef;
@@ -43,6 +44,10 @@ $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-800 !default;
 
-// Monokai
-
 $sidebar-base-width: 15rem;
+
+// Media query sizes
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;

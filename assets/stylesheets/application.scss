@@ -6,6 +6,7 @@
 @import 'nav.scss';
 @import 'resume-item.scss';
 @import 'bootstrap-overrides.scss';
+@import 'media-query-overrides.scss';
 
 // Components
 .relevant-courses {
@@ -24,6 +25,7 @@
     border-radius: 5px;
     max-width: 900px;
     border: 1px solid #d3d3d3;
+    object-fit: cover;
   }
 
   .content {
@@ -50,4 +52,9 @@
     color: $monokai-red;
     // backcolor: $white;
   }
+}
+
+.email {
+  line-height: 1.2em;
+  font-size: 1.5em;
 }
