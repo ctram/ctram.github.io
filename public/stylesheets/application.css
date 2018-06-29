@@ -134,11 +134,11 @@ a {
     border-color: #f92672 !important;
     color: #f92672; }
 
-.relevant-courses {
+.details {
   font-size: 1em; }
-  .relevant-courses ul {
+  .details ul {
     font-size: 0.9em; }
-    .relevant-courses ul li {
+    .details ul li {
       list-style-type: none; }
 
 #projects img {
