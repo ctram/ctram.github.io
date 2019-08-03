@@ -21,7 +21,7 @@
   <script defer src="js/resume.min.js"></script>
 </head>
 
-<body id="page-top">
+<body id="page-top" class="text-left">
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-none d-lg-block">
@@ -58,10 +58,10 @@
     </div>
   </nav>
 
-  <div class="container-fluid py-0 px-5 px-md-3">
+  <div class="container-fluid px-md-3">
     <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
       <div class="my-auto">
-        <h1 class="mb-0">Chris
+        <h1 class="mb-0 full-name">Chris
           <span class="text-primary">Tram</span>
         </h1>
 
@@ -72,7 +72,7 @@
         </div>
 
         <div class="row mb-5">
-          <div class="description col-sm-11 col-md-10 col-xl-8">
+          <div class="description col-sm-11 col-md-10 col-xl-8 text-left">
             <p>I am a web developer with a passion for learning new things. As luck would have it, there is a neverending amount
               of new material to learn in this field : ]</p>
             <p>
@@ -214,6 +214,8 @@
       </div>
     </section>
 
+    <!--  Job experience -->
+
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
       <div class="my-auto">
         <h2 class="mb-5">Experience</h2>
@@ -223,7 +225,7 @@
             <h3 class="mb-0">Customer Solutions Engineer</h3>
             <div class="subheading mb-3">MyTime</div>
             <div class="row">
-              <p class="col-xl-8">Responsible for customer data migration from current platform to MyTime platform (Extract-Transform-Load).</p>
+              <p class="col-xl-8 text-left">Responsible for customer data migration from their current platforms to MyTime platform (Extract-Transform-Load).</p>
             </div>
           </div>
           <div class="resume-date text-md-right">
@@ -236,7 +238,7 @@
             <h3 class="mb-0">Software Engineer</h3>
             <div class="subheading mb-3">Citadel, LLC</div>
             <div class="row">
-              <p class="col-xl-8">Worked to change the scope of the product to become more aligned with the needs of a single client with their
+              <p class="col-xl-8 text-left">Worked to change the scope of the product to become more aligned with the needs of a single client with their
                 specific specifications and work flows.</p>
             </div>
           </div>
@@ -245,11 +247,11 @@
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-item d-flex flex-column flex-md-row mb-5 text-left">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">Front End Engineer</h3>
             <div class="subheading mb-3">Gild</div>
-            <p>Worked closely with the Director of Product and Lead Designer, building, testing and deploying features on a
+            <p class="text-left">Worked closely with the Director of Product and Lead Designer, building, testing and deploying features on a
               weekly basis.</p>
           </div>
           <div class="resume-date text-md-right">
@@ -264,8 +266,34 @@
       <div class="my-auto">
         <h2 class="">Projects</h2>
         <div class="resume-item d-flex flex-column  mt-5">
+          <h3 class="mb-3">Habit Tracker</h3>
+          <div class="text-muted built-description mb-3 text-left">
+            Built with: Rails, React, Redux, React-router, Bootstrap, Postgres
+          </div>
+
+          <img class="img-fluid mx-sm-auto mb-5" src="https://res.cloudinary.com/dt6ccpxqd/image/upload/v1564790952/habit-tracker-calendar_xwmqpd.png"
+          />
+          <img class="img-fluid mx-sm-auto mb-5" src="https://res.cloudinary.com/dt6ccpxqd/image/upload/v1564790955/habit-tracker-habits-index_jjfg4w.png"
+          />
+          <img class="img-fluid mx-sm-auto mb-5" src="https://res.cloudinary.com/dt6ccpxqd/image/upload/v1564790953/habit-tracker-mobile_awrrdg.png"
+           style="max-width: 300px"/>
+          <div class="text-center">
+            <a class="btn btn-primary" href="http://habit-tracker-1.herokuapp.com">
+              App
+            </a>
+            <a class="btn btn-dark" href="https://github.com/ctram/habit_tracker">
+              <code>
+                <span class="code-bracket">&lt;</span>
+                <span class="code-text">code</span>
+                <span class="code-slash">/</span>
+                <span class="code-bracket">&gt;</span>
+              </code>
+            </a>
+          </div>
+        </div>
+        <div class="resume-item d-flex flex-column  mt-5">
           <h3 class="mb-3">Live Events Bulletin</h3>
-          <div class="text-muted built-description mb-3">
+          <div class="text-muted built-description mb-3 text-left">
             Built with: Express, React, Sequelize, Bootstrap, Postgres
           </div>
           <img class="img-fluid mx-sm-auto mb-5" src="http://res.cloudinary.com/dt6ccpxqd/image/upload/v1530242733/portfolio-site/live-events-bulletin.png"
@@ -287,7 +315,7 @@
         </div>
         <div class="resume-item d-flex flex-column    ">
           <h3 class="mb-3">FosterPals</h3>
-          <div class="text-muted built-description mb-3">
+          <div class="text-muted built-description mb-3 text-left">
             Built with: Rails, Backbone, Bootstrap, Postgres
           </div>
           <img class="img-fluid mx-sm-auto mb-5" src="http://res.cloudinary.com/dt6ccpxqd/image/upload/v1529876462/portfolio-site/fosterpals-demo.png"
@@ -308,7 +336,7 @@
         </div>
         <div class="resume-item d-flex flex-column ">
           <h3 class="mb-3">Minesweeper</h3>
-          <div class="text-muted built-description mb-3">
+          <div class="text-muted built-description mb-3 text-left">
             Built with: React
           </div>
           <img class="img-fluid mx-sm-auto mb-5" src="http://res.cloudinary.com/dt6ccpxqd/image/upload/v1532379122/Screen_Shot_2018-07-23_at_13.50.01_ogg8od.png"
@@ -329,7 +357,7 @@
         </div>
         <div class="resume-item d-flex flex-column ">
           <h3 class="mb-3">Space Debris</h3>
-          <div class="text-muted built-description mb-3">
+          <div class="text-muted built-description mb-3 text-left">
             Built with: HTML Canvas
           </div>
           <img class="img-fluid mx-sm-auto mb-5" src="http://res.cloudinary.com/dt6ccpxqd/image/upload/v1529876233/portfolio-site/space-debris-shot_hjz9m7_1.jpg"
@@ -350,7 +378,7 @@
         </div>
         <div class="resume-item d-flex flex-column mb-5">
           <h3 class="mb-3">Chess</h3>
-          <div class="text-muted built-description mb-3">
+          <div class="text-muted built-description mb-3 text-left">
             Built with: Ruby
           </div>
           <img class="img-fluid mx-sm-auto mb-5 chess" src="http://res.cloudinary.com/dt6ccpxqd/image/upload/v1529876463/portfolio-site/chess_ntel0z_1_gjkvjq.jpg"
@@ -418,7 +446,7 @@
       <div class="my-auto">
         <h2 class="mb-5">Interests</h2>
         <div class="row mb-5">
-          <div class="description col-sm-11 col-md-10 col-xl-8">
+          <div class="description col-sm-11 col-md-10 col-xl-8 text-left">
             <p>When not coding, I enjoy reading and watching sci-fi, reading up on Economics and Sociology topics, and practicing
               Brazilian Jiu Jitsu. I also live with two adorably weird and incredibly lovable Pekingese dogs, who demand
               long romps in the outdoors. I love dancing Lindy Hop around the Bay Area, so definitely say "Hi" if you spot
