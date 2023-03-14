@@ -11,6 +11,7 @@
 // Components
 .details {
   font-size: 1em;
+
   ul {
     font-size: 0.9em;
 
@@ -31,9 +32,11 @@
     .header {
       color: $gray-400;
     }
+
     .devicon-github-plain {
       color: $gray-600;
     }
+
     a {
       text-decoration-line: none;
     }
@@ -56,6 +59,7 @@
 .email {
   line-height: 1.2em;
   font-size: 1.5em;
+  margin-left: 1em;
 }
 
 .built-description {

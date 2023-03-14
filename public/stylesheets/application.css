@@ -1,63 +1,80 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   padding-top: 54px;
   color: #868e96;
-  text-align: justify; }
+  text-align: justify;
+}
 
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 15rem; } }
+    padding-left: 15rem;
+  }
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40; }
+  color: #343a40;
+}
 
 h1 {
   font-size: 3rem;
-  line-height: 2.25rem; }
+  line-height: 2.25rem;
+}
 
 @media (min-width: 768px) {
   h1 {
     font-size: 6rem;
-    line-height: 5.5rem; } }
+    line-height: 5.5rem;
+  }
+}
 h2 {
   font-size: 3.5rem;
-  color: #f92672; }
+  color: #f92672;
+}
 
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.35rem; }
+  font-family: "Roboto Slab", serif;
+  font-size: 1.35rem;
+}
 
 .list-social-icons a {
-  color: #495057; }
-  .list-social-icons a:hover {
-    color: #f92672; }
-  .list-social-icons a .fa-lg {
-    font-size: 1.75rem; }
+  color: #495057;
+}
+.list-social-icons a:hover {
+  color: #f92672;
+}
+.list-social-icons a .fa-lg {
+  font-size: 1.75rem;
+}
 
 .list-icons {
-  font-size: 3rem; }
-  .list-icons .list-inline-item i:hover {
-    color: #f92672; }
+  font-size: 3rem;
+}
+.list-icons .list-inline-item i:hover {
+  color: #f92672;
+}
 
 a {
   -webkit-text-decoration: none;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 #sideNav {
-  background-color: #272822; }
-  #sideNav .navbar-nav .nav-item .nav-link {
-    font-weight: 600;
-    text-transform: uppercase; }
+  background-color: #272822;
+}
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
 @media (min-width: 992px) {
   #sideNav {
@@ -68,112 +85,151 @@ a {
     display: flex;
     flex-direction: column;
     width: 15rem;
-    height: 100vh; }
-    #sideNav .navbar-brand {
-      display: flex;
-      margin: auto auto 0;
-      padding: 0.5rem; }
-      #sideNav .navbar-brand .img-profile {
-        max-width: 10rem;
-        max-height: 10rem;
-        border: 0.2rem solid #f92672;
-        border-radius: 20% !important; }
-    #sideNav .navbar-collapse {
-      display: flex;
-      align-items: flex-start;
-      flex-grow: 0;
-      width: 100%;
-      margin-bottom: auto; }
-      #sideNav .navbar-collapse .navbar-nav {
-        flex-direction: column;
-        width: 100%; }
-        #sideNav .navbar-collapse .navbar-nav .nav-item {
-          display: block; }
-          #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-            display: block; } }
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.2rem solid #f92672;
+    border-radius: 20% !important;
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
 section.resume-section {
   border-bottom: 1px solid #dee2e6;
   padding-top: 5rem !important;
-  padding-bottom: 5rem !important; }
-  section.resume-section .resume-item .resume-date {
-    min-width: none; }
+  padding-bottom: 5rem !important;
+}
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh; }
-    section.resume-section .resume-item .resume-date {
-      min-width: 18rem; } }
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
-    padding-bottom: 3rem !important; } }
+    padding-bottom: 3rem !important;
+  }
+}
 .bg-primary {
-  background-color: #f92672 !important; }
+  background-color: #f92672 !important;
+}
 
 .text-primary {
-  color: #f92672 !important; }
+  color: #f92672 !important;
+}
 
 a {
-  color: #f92672; }
-  a:hover, a:focus, a:active {
-    color: #cd064d; }
+  color: #f92672;
+}
+a:hover, a:focus, a:active {
+  color: #cd064d;
+}
 
 .btn-primary {
   background-color: #f92672;
-  border-color: #f92672; }
-  .btn-primary:hover {
-    background: #fff;
-    color: #f92672;
-    border-color: #f92672; }
+  border-color: #f92672;
+}
+.btn-primary:hover {
+  background: #fff;
+  color: #f92672;
+  border-color: #f92672;
+}
 
 .btn-dark {
   background-color: #272822;
-  border-color: #272822; }
-  .btn-dark:hover {
-    background-color: #fff;
-    border-color: #f92672 !important;
-    color: #f92672; }
+  border-color: #272822;
+}
+.btn-dark:hover {
+  background-color: #fff;
+  border-color: #f92672 !important;
+  color: #f92672;
+}
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   h1 {
-    font-size: 2.3em; }
-
+    font-size: 2.3em;
+  }
   h2 {
-    font-size: 2.1em; } }
+    font-size: 2.1em;
+  }
+}
 .details {
-  font-size: 1em; }
-  .details ul {
-    font-size: 0.9em; }
-    .details ul li {
-      list-style-type: none; }
+  font-size: 1em;
+}
+.details ul {
+  font-size: 0.9em;
+}
+.details ul li {
+  list-style-type: none;
+}
 
 #projects img {
   border-radius: 5px;
   border: 1px solid #d3d3d3;
-  object-fit: cover; }
+  object-fit: cover;
+}
 #projects .content .header {
-  color: #ced4da; }
+  color: #ced4da;
+}
 #projects .content .devicon-github-plain {
-  color: #868e96; }
+  color: #868e96;
+}
 #projects .content a {
-  text-decoration-line: none; }
+  text-decoration-line: none;
+}
 #projects .resume-item {
-  margin-bottom: 5em; }
+  margin-bottom: 5em;
+}
 
 .code-text {
-  color: #f92672; }
-  .btn-dark:hover .code-text {
-    color: #f92672; }
+  color: #f92672;
+}
+.btn-dark:hover .code-text {
+  color: #f92672;
+}
 
 .email {
   line-height: 1.2em;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-left: 1em;
+}
 
 .built-description {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 .app-description {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+}
 
 /*# sourceMappingURL=application.css.map */

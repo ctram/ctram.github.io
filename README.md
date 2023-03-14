@@ -5,6 +5,7 @@ Just my home on the internet.
 ## Requirements
 
 - Yarn
+- SASS CLI
 
 ## Installation
 

@@ -6,6 +6,7 @@ body {
   color: $gray-600;
   text-align: justify;
 }
+
 @media (min-width: 992px) {
   body {
     padding-top: 0;
@@ -31,24 +32,21 @@ h1 {
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-}
+@media (min-width: 576px) {}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    h1 {
-      font-size: 6rem;
-      line-height: 5.5rem;
-    }
+  h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+  }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-}
+@media (min-width: 992px) {}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}
 
 h2 {
   font-size: 3.5rem;
@@ -65,9 +63,11 @@ h2 {
 .list-social-icons {
   a {
     color: $gray-700;
+
     &:hover {
       color: $primary;
     }
+
     .fa-lg {
       font-size: 1.75rem;
     }
@@ -76,6 +76,7 @@ h2 {
 
 .list-icons {
   font-size: 3rem;
+
   .list-inline-item i {
     &:hover {
       color: $primary;
