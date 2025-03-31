@@ -39,7 +39,7 @@ p {
 }
 
 body > section {
-  margin: 4rem 0;
+  margin: 3rem 0;
 }
 
 .work-experience-item {
@@ -128,7 +128,7 @@ nav a:hover {
 /* Technical Highlights */
 .technical-highlights {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .highlight-item {
